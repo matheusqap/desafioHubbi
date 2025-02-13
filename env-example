@@ -1,0 +1,19 @@
+###### Environment
+AUTOPARTS_ENVIRONMENT=LOCAL
+
+###### Django
+DEBUG=True
+SECRET_KEY = 'django-insecure-^*3-^fr-20(mrald77-5mif#)0czw^pzj%ub&z%-qvq3naqmxz'
+CORE_ENCRYPTION_KEY = 'yJrDG47vQsLFx0inP5kXv0rutTuUlzL_QaBH_rwfu44='
+ALLOWED_HOSTS=127.0.0.1, .localhost
+
+###### Database 
+DB_NAME=parts
+DB_USER=pguser
+DB_PASSWORD=password
+DB_HOST=localhost
+DB_PORT=5432
+
+###### Redis/Celery 
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
