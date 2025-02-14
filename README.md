@@ -1,5 +1,15 @@
 # Django Project - Autoparts Requirements
 
+## Sobre o Projeto
+
+Este projeto foi desenvolvido para atender ao desafio de criar um sistema de consulta de peças automotivas utilizando Django. O objetivo principal é oferecer uma API RESTful que permita:
+
+- **Listagem, consulta e gestão de estoque de peças automotivas**;
+- **Importação assíncrona de peças via planilha**, otimizando a atualização em massa dos registros no sistema;
+- **Reposição automática de estoque**, garantindo que o sistema esteja sempre atualizado com níveis mínimos de peças.
+
+Além disso, a aplicação foi projetada com foco em eficiência e escalabilidade, utilizando tecnologias modernas, como Celery e Redis, para tarefas assíncronas, e PostgreSQL para gerenciar os dados.
+
 ## Autoparts Configurations and Requirements
 
 ### **Ubuntu 14.11 22.04.1**
