@@ -1,4 +1,4 @@
-from rest_framework.permissions import IsAuthenticated, IsAdminUser, AllowAny
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.decorators import action
 from rest_framework.parsers import MultiPartParser, FormParser
@@ -43,7 +43,7 @@ class PartViewSet(
         detail=False, 
         methods=['POST'], 
         url_path='inport/csv', 
-        permission_classes=[AllowAny],
+        permission_classes=[IsAdminUser],
         serializer_class=PartsTableSerializer,
         parser_classes = [MultiPartParser, FormParser]
     )

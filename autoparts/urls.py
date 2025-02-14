@@ -17,8 +17,8 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('dashboard/admin', admin.site.urls),
-    path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('auth/', include('autoparts.authentication.urls', namespace='authentication')),
     path('cars/', include('autoparts.cars.urls', namespace='cars')),
     path('parts/', include('autoparts.parts.urls', namespace='parts')),
+    path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ]
